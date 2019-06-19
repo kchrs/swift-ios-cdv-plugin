@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-acc-plugins-storyswift" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>TestSwiftStoryBoard</name>
+    <js-module name="TestSwiftStoryBoard" src="www/TestSwiftStoryBoard.js">
+        <clobbers target="TestSwiftStoryBoard" />
+    </js-module>
+    <platform name="ios">
+  <config-file target="config.xml" parent="/*">
+    <feature name="SwiftStoryBoard">
+      <param name="ios-package" value="SwiftStoryBoard" />
+    </feature>
+  </config-file>
+  <source-file src="swift-fb-cdv/swift-fb-cdv/AppDelefate.swift" />
+  <source-file src="swift-fb-cdv/swift-fb-cdv/FirstViewController.swift" />
+  <source-file src="swift-fb-cdv/swift-fb-cdv/SecondViewController.swift" />
+</platform>
+</plugin>
